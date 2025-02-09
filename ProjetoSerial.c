@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <ctype.h>
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
@@ -80,12 +81,14 @@ void gpio_irq_handler(uint gpio, uint32_t events)
         bool current_state = gpio_get(LED_PIN_GREEN);
         gpio_put(LED_PIN_GREEN, !current_state);
         green_updated = true;
+        printf("LED verde alternou\n");
     }
     else if (gpio == BUTTON_B_PIN && (events & GPIO_IRQ_EDGE_FALL))
     {
         bool current_state = gpio_get(LED_PIN_BLUE);
         gpio_put(LED_PIN_BLUE, !current_state);
         blue_updated = true; // Ativa flag para mensagem azul
+        printf("LED azul alternou\n");
     }
 }
 
