@@ -6,6 +6,7 @@
 - **Carlos Henrique Silva Lopes**
 
 ## **Link do vídeo de Ensaio**
+https://drive.google.com/file/d/16le3XUE2Pjd3hJfyWEngFEc1UsPwLKM7/view?usp=sharing
 
 ## Objetivos
 
